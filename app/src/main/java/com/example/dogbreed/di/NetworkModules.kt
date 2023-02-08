@@ -1,3 +1,4 @@
+import com.example.dogbreed.network.DogBreedApi
 import com.example.dogbreed.util.Constants.Companion.BASE_URL
 import dagger.Module
 import dagger.Provides
