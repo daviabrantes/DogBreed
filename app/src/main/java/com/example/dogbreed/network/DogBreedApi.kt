@@ -1,25 +1,28 @@
 package com.example.dogbreed.network
 
+import com.example.dogbreed.data.models.BreedResponse
 import retrofit2.Response
 import retrofit2.http.GET
+import retrofit2.http.Path
 import retrofit2.http.Query
 import retrofit2.http.QueryMap
 
 interface DogBreedApi {
 
-    @GET("images")
-    suspend fun getImages(
+    @GET("dog_breeds")
+    suspend fun getAllDogBreeds(
         @QueryMap queries: Map<String, String>
-    ): Response<DogBreed>
+    ): Response<BreedResponse>
 
-    @GET("breeds")
-    suspend fun getBreeds(
+    @GET("dog_breeds/breed/")
+    suspend fun getDogBreed(
         @QueryMap searchQuery: Map<String, String>
-    ): Response<DogBreed>
+    ): Response<BreedResponse>
 
-    @GET("breeds")
+    @GET("dog_breeds/group/{typeParameter}/{statusParameter}")
     suspend fun searchBreed(
-        @Query("apiKey") apiKey: String
-    ): Response<DogBreed>
+        @Path("typeParameters") type: String,
+        @Path("statusParameter") status: String
+    ): Response<BreedResponse>
 
 }
