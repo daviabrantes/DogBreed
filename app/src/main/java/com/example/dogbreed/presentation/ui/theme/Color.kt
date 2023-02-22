@@ -1,4 +1,4 @@
-package com.example.dogbreed.ui.theme
+package com.example.dogbreed.presentation.ui.theme
 
 import androidx.compose.material.Colors
 import androidx.compose.runtime.Composable

@@ -15,4 +15,3 @@ class RequestInterceptor : Interceptor {
         return chain.proceed(request)
     }
 }
-}

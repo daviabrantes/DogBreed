@@ -1,7 +1,7 @@
 package com.example.dogbreed.domain.model
 
 import android.os.Parcelable
-import com.example.dogbreed.data.models.ImageSourceSetResponse
+import com.example.dogbreed.data.model.ImageSourceSetResponse
 import kotlinx.parcelize.Parcelize
 
 @Parcelize

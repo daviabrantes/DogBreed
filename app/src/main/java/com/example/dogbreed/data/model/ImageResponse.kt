@@ -1,4 +1,4 @@
-package com.example.dogbreed.data.models
+package com.example.dogbreed.data.model
 
 import kotlinx.serialization.SerialName
 
